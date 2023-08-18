@@ -311,13 +311,15 @@ class Script(scripts.Script):
             'regenerate': False,
             '_continue': False,
             'stop_at_newline': False,
-            'chat_prompt_size': 2048,
+            'chat_prompt_size': 4096,
+            'max_context_length': 4096,
             'chat_generation_attempts': 1,
             'chat-instruct_command': 'Act like a prompt creator, brake keywords by comas, provide high quality, non-verboose, coherent, brief, concise, and not superfluous prompts, Only write the visuals elements of the picture, Never write art commentaries or intentions. Construct the prompt with the componet format, Always include all the keywords from the request verbatim as the main subject of the response: "".\n\n',
             'seed': -1,
             'add_bos_token': True,
             'custom_stopping_strings': [stopping,],
-            'truncation_length': 2048,
+            'truncation_length': 4096,
+            'max_new_tokens': 200,
             'ban_eos_token': False,
         }
         headers = {
